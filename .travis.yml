@@ -9,8 +9,10 @@ matrix:
           env: JEKYLL_VERSION=3.03
     fast_finish: true
 
-before_script: bundle update
-script: ./script/cibuild
+install:
+  - bundle install
+
+script: bundle exec rake site:deploy
 
 branches:
   only:
@@ -19,3 +21,4 @@ branches:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  secure: "ZjXcDUFYt8X0AuTFF0umjagz0rlS6u8t21BN8h9bdChnBl29ustIgmZfgMWxwFR6xPyKOgt2fhMs8sePZ+UL4AePw18Oqi90Xmu/m4GCZ7i8cXGlA/IoYXcVCCu3IZ+hDPFBBUjjvXTxL1vHj7m9BuNyCDPl/DbnXl2hW4iEXKQ="

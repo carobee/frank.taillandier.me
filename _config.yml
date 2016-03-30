@@ -36,13 +36,18 @@ social:
 kramdown:
   input: GFM
 
-branch: gh-pages
-
 sass:
   style: compressed
 
+# Jekyll-Travis
+destination: ../frank.taillandier.me-gh-pages/
+username: DirtyF
+repo: frank.taillandier.me
+branch: source
+
 include:
   - "_pages"
+  - .nojekyll
 
 exclude:
   - vendor
@@ -52,6 +57,7 @@ exclude:
   - Procfile
   - README.md
   - CNAME
+  - .travis.yml
 
 gems:
   - jekyll-github-metadata
