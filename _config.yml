@@ -43,7 +43,7 @@ sass:
 destination: ../frank.taillandier.me-gh-pages/
 username: DirtyF
 repo: frank.taillandier.me
-branch: source
+branch: gh-pages
 
 include:
   - "_pages"
@@ -57,6 +57,7 @@ exclude:
   - Procfile
   - README.md
   - CNAME
+  - Rakefile
   - .travis.yml
 
 gems:
